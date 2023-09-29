@@ -21,3 +21,21 @@ def tamanoMatriz(matriz):
             print("Los renglones deben de tener la misma cantidad de elementos")
             return -1,-1
     return numRen,numCol
+
+def mismoTamano(mat1,mat2):
+    nr1,nc1 = tamanoMatriz(mat1)
+    nr2,nc2 = tamanoMatriz(mat2)
+    
+    bandera = True
+    if (nr1 != nr2):
+        print("Son diferentes en el numero de renglones")
+        bandera = False
+    if (nc1 != nc2):
+        print("Son diferentes en el numero de columnas")
+        bandera = False
+    if (-1 in [nr1,nr2,nc1,nc2]):
+        print("Error en alguna de las matrices")
+        bandera = False
+    return bandera
+
+    
