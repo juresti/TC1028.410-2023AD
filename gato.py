@@ -6,10 +6,13 @@ def creaMatriz(numRen,numCol):
     return matriz
 
 def imprimeMatriz(matriz):
+    cont = 0
+    print("  0 1 2")
     for renglon in matriz:
-        linea = ""
+        linea = f"{str(cont)} "
         for dato in renglon:
             linea += dato + " "
+        cont += 1
         print(linea)
 
 def preguntaUsuario(tablero):
